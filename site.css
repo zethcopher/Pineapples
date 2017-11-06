@@ -1,0 +1,137 @@
+﻿body, main, html {
+    height: 100%;
+    width: 100%;
+}
+html {
+    background-color:black;
+}
+header {
+    background-color: #fbffe5;
+    font-size: 15px;
+    padding: 3px;
+    justify-content: center;
+    word-spacing: 40px;
+    letter-spacing: 2px;
+    width:100%;
+    position:fixed;
+    z-index: 10;
+    box-shadow:  0 0 1em black;
+    
+}
+.star {
+    /*filter: invert(100%);*/
+    transition: 1s;
+    height: auto;
+    width: auto;
+    max-height:30px;
+    max-width:43px;
+}
+
+    .star:hover {
+       transform:rotate(-360deg);
+    } 
+
+header a {
+    color: black;
+    text-decoration: none;
+    transition: .3s;
+}
+
+   header a:hover, .active{
+        color: #ead317;
+        
+    }
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+
+main {
+
+}
+
+section {
+    margin-top: 0;
+    padding: 50px 80px;
+    background-color: #FFF;
+    color: gray;
+    align-items:center;
+    box-shadow: 0 0 1em black;
+}
+
+    section > h2, div {
+        margin-top: 0;
+        text-align: center;
+        color: black;
+    }
+    
+div.parallax {
+    height: 30%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .80;
+    background-image: url('img/pineapplebg.jpg');
+    box-shadow: inset 0 0 1em black;
+   /* filter:blur(5px);*/
+}
+
+
+.caption {
+    position: absolute;
+    top:20%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.border {
+    background-color:#fbffe5;
+    color: #9de21d;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 7px;
+    box-shadow: 0 0 1em black;
+}
+footer {
+    background-color: #1e1e1f;
+    font-size: 12px;
+    color: white;
+    text-align: right;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    right: 0;
+    bottom: 0;
+    padding: 2px 10px;
+}
+.intextlink {
+    color: LightBlue;
+    text-decoration:none;
+}
+.inTxtImg{
+    align-items: center;
+    padding-bottom: 10px;
+    filter: opacity(75%);
+}
+
+.imgList {
+    white-space: nowrap;
+}
+
+.imgList, li{
+    list-style: none;
+    display: inline;
+    border-radius: 25px;
+    padding:0;
+    margin:8px;
+}
+
+.imgList li:hover {
+    filter:blur(2px);
+}
